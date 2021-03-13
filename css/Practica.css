@@ -1,0 +1,38 @@
+     .numero{
+        padding: 20px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: red;
+        
+    }
+
+    .cajatexto{ 
+        width: 70px;
+    }
+
+    .contenedor{
+    padding: 30px; 
+    background-color: #3666bee5; 
+    border-radius: 25px; 
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    .botonsumar{
+        padding: 20px;
+        background-color: rgba(63, 197, 197, 0.61);
+        width: 100px;
+        border-radius: 60px;
+        display: inline;
+    }
+
+
+    @media (min-width: 1920.98px) { 
+        .numero{
+            padding: 20px;
+            width: 100px;
+            heigth: 10px;
+            border-radius: 50px;
+            background-color: #000;
+
+    }

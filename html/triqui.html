@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    >
+
+  <style>
+    .tamano {
+      font-size: 100px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .colorX {
+      color: red;
+    }
+
+    .colorO {
+      color: blue;
+    }
+
+    .bordo {
+      border: 7px solid black;
+    }
+  </style>
+  <title>Triqui</title>
+</head>
+
+<body>
+  <div class="container text-center mt-3">
+    <div class="row bordo">
+      <div class="col-4 border border-dark">
+        <span onclick="para11()" id="soy11" class="tamano colorX">X</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para12()" id="soy12" class="tamano colorO">O</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para13()" id="soy13" class="tamano colorX">X</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para21()" id="soy21" class="tamano colorO">O</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para22()" id="soy22" class="tamano colorX">X</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para23()" id="soy23" class="tamano colorO">O</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para31()" id="soy31" class="tamano colorX">X</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para32()" id="soy32" class="tamano colorO">O</span>
+      </div>
+      <div class="col-4 border border-dark">
+        <span onclick="para33()" id="soy33" class="tamano colorX">X</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

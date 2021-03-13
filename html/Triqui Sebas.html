@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Triqui de Sebas</title>
+
+  <style>
+    .estilo {
+      font-size: 100px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .personax {
+      color: red;
+      text-shadow: 1px 1px 10px black;
+      border: 5px solid black;
+    }
+
+    .personao {
+      color: blue;
+      text-shadow: 1px 1px 10px black;
+      
+
+
+    }
+
+    .container{
+      border: 8px outset grey;
+      margin-bottom: 10px;   
+    }
+
+    
+    .turno1{
+      font-size: 50px;
+      cursor: pointer;
+      color: black;
+      text-shadow: 1px 1px 10px black;
+      border: 2px solid black;
+    }
+
+    .botoninicio{
+      font-size: 50px;
+      cursor: pointer;
+      color: black;
+      text-shadow: 1px 1px 10px black;
+      margin-bottom: 10px;
+    }
+
+    .col-4{
+      border: 2px solid black;
+    }
+
+  </style>
+</head>
+
+
+<body>
+<div class="container text-center estilo">
+  <div class="row">
+    <div class="col-6 turno1">1</div>
+    <div class="col-6 turno1">2</div>
+  </div>
+</div>
+
+  <div class="container text-center estilo">
+    <div class="row" >
+      <div class="col-4 personax" id="cuadro1">X</div>
+      <div class="col-4 personao" id="cuadro2">O</div>
+      <div class="col-4 personax" id="cuadro3">X</div>
+
+    </div>
+    <div class="row">
+      <div class="col-4 personao" id="cuadro4">O</div>
+      <div class="col-4 personax" id="cuadro5">X</div>
+      <div class="col-4 personao" id="cuadro6">O</div>
+
+    </div>
+    <div class="row">
+      <div class="col-4 personax" id="cuadro7">X</div>
+      <div class="col-4 personao" id="cuadro8">O</div>
+      <div class="col-4 personax" id="cuadro9">X</div>
+
+    </div>
+    
+  </div>
+  <div class="container text-center botoninicio">
+    <div class="row"></div>
+    <div class="col-12 " onclick="limpiarcuadro()">Iniciar Juego</div>
+  </div>
+<script>
+
+
+let turno;
+
+function limpiarcuadro(){
+  for (let i = 1; i < 10; i++) {
+    document.getElementById('cuadro'+i).innerHTML='.';
+    document.getElementById('cuadro'+i).classList.remove('personao', 'personax')
+    
+    
+  }
+} 
+
+</script>
+
+</body>
+
+</html>
